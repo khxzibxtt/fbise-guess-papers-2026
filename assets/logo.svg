@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff2222"/>
+      <stop offset="100%" style="stop-color:#990000"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444"/>
+      <stop offset="100%" style="stop-color:#cc0000"/>
+    </linearGradient>
+    <filter id="shine">
+      <feSpecularLighting result="spec" specularExponent="30" lighting-color="#ff6666">
+        <fePointLight x="20" y="15" z="60"/>
+      </feSpecularLighting>
+      <feComposite in="SourceGraphic" in2="spec" operator="arithmetic" k1="0" k2="1" k3="0.3" k4="0"/>
+    </filter>
+  </defs>
+  <!-- Left bracket arm -->
+  <path d="M10 15 L30 15 L30 25 L20 25 L20 75 L30 75 L30 85 L10 85 Z" fill="url(#g1)"/>
+  <!-- Right bracket arm -->
+  <path d="M90 15 L70 15 L70 25 L80 25 L80 75 L70 75 L70 85 L90 85 Z" fill="url(#g1)"/>
+  <!-- Top bar -->
+  <rect x="28" y="15" width="44" height="13" rx="2" fill="url(#g2)"/>
+  <!-- Dot/circle -->
+  <circle cx="50" cy="58" r="10" fill="url(#g1)"/>
+  <circle cx="46" cy="54" r="3" fill="rgba(255,120,120,0.5)"/>
+  <!-- Highlight sheen -->
+  <path d="M15 17 L85 17 L80 22 L20 22 Z" fill="rgba(255,200,200,0.25)"/>
+</svg>
