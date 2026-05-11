@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Archive | Khxzi Devs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Khxzi Devs</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="biology.html" class="active">Biology</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="math.html">Math</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero animate-up">
+            <span class="card-tag">Subject Focus</span>
+            <h1>Biology Digital Archive</h1>
+            <p>Everything you need to ace the FBISE Biology Exam: Predictions, Analysis, and Solved Past Papers.</p>
+        </header>
+
+        <section class="animate-up">
+            <h2>2026 Guess Papers (SLO-Based)</h2>
+            <div class="grid">
+                <!-- Realistic -->
+                <div class="card">
+                    <span class="card-tag">Prediction • 2026</span>
+                    <h3>Realistic Paper</h3>
+                    <p>Balanced difficulty, highly likely questions based on 5-year trends.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/FBISE_Biology_2026_Realistic_Paper.pdf')">View</button>
+                        <a href="papers/FBISE_Biology_2026_Realistic_Paper.pdf" download class="btn btn-outline">Download</a>
+                    </div>
+                </div>
+
+                <!-- Hard -->
+                <div class="card">
+                    <span class="card-tag">Prediction • 2026</span>
+                    <h3>Hard Paper</h3>
+                    <p>Conceptual and advanced questions for students aiming for maximum marks.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/FBISE_Biology_2026_Hard_Paper.pdf')">View</button>
+                        <a href="papers/FBISE_Biology_2026_Hard_Paper.pdf" download class="btn btn-outline">Download</a>
+                    </div>
+                </div>
+
+                <!-- Analysis -->
+                <div class="card">
+                    <span class="card-tag">Resource</span>
+                    <h3>Trend Analysis</h3>
+                    <p>Deep dive into chapter weightage and repeated concepts from 2020-2025.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/FBISE_Biology_2026_Analysis_Report.pdf')">View</button>
+                        <a href="papers/FBISE_Biology_2026_Analysis_Report.pdf" download class="btn btn-outline">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 60px;" class="animate-up">
+            <h2>Past Papers (Official Archive)</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="card-tag">Official • 12th</span>
+                    <h3>SLO Past Papers (Class 12)</h3>
+                    <p>Access the full archive of 12th Class Biology SLO-based past papers.</p>
+                    <a href="https://pastpapersfbise.com/federal-board-12th-class-slo-past-papers/" target="_blank" class="btn btn-outline">Go to Archive</a>
+                </div>
+                <div class="card">
+                    <span class="card-tag">Official • 11th</span>
+                    <h3>SLO Past Papers (Class 11)</h3>
+                    <p>Access the full archive of 11th Class Biology SLO-based past papers.</p>
+                    <a href="https://pastpapersfbise.com/class-11-fbise-past-papers-pdf-download/" target="_blank" class="btn btn-outline">Go to Archive</a>
+                </div>
+                <div class="card">
+                    <span class="card-tag">Official • SSC</span>
+                    <h3>9th & 10th Past Papers</h3>
+                    <p>SSC Part I and II Biology papers including latest 2024 annual exams.</p>
+                    <a href="https://pastpapersfbise.com/fbise-9th-class-past-papers/" target="_blank" class="btn btn-outline">Go to Archive</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="viewer-overlay" id="viewer">
+        <div class="viewer-header">
+            <h3 id="viewer-title">PDF Viewer</h3>
+            <button class="btn btn-primary" style="max-width: 100px;" onclick="closeViewer()">Close</button>
+        </div>
+        <div class="viewer-content">
+            <iframe id="pdf-frame"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Khxzi Devs | Biology Department</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

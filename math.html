@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Archive | Khxzi Devs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Khxzi Devs</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="biology.html">Biology</a>
+                <a href="physics.html">Physics</a>
+                <a href="chemistry.html">Chemistry</a>
+                <a href="math.html" class="active">Math</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero animate-up">
+            <span class="card-tag">Subject Focus</span>
+            <h1>Mathematics Digital Archive</h1>
+            <p>Master the FBISE Math Exam: 2026 Prediction Papers and a comprehensive archive of solved model papers.</p>
+        </header>
+
+        <section class="animate-up">
+            <h2>2026 Guess Papers (SLO-Based)</h2>
+            <div class="grid">
+                <!-- Math Ultimate -->
+                <div class="card">
+                    <span class="card-tag">Prediction • 2026</span>
+                    <h3>Ultimate Predictor</h3>
+                    <p>Comprehensive coverage of key theorems and high-probability long questions.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/FBISE_Math_HSSC1_Ultimate_2026.pdf')">View</button>
+                        <a href="papers/FBISE_Math_HSSC1_Ultimate_2026.pdf" download class="btn btn-outline">Download</a>
+                    </div>
+                </div>
+
+                <!-- Math Realistic -->
+                <div class="card">
+                    <span class="card-tag">Prediction • 2026</span>
+                    <h3>Math Predicted 2026</h3>
+                    <p>Modeled exactly after the recent FBISE exam structure for 2026.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/FBISE_HSSC1_Math_Predicted_2026.pdf')">View</button>
+                        <a href="papers/FBISE_HSSC1_Math_Predicted_2026.pdf" download class="btn btn-outline">Download</a>
+                    </div>
+                </div>
+
+                <!-- Math Standard -->
+                <div class="card">
+                    <span class="card-tag">Prediction • 2026</span>
+                    <h3>Standard Model HSSC1</h3>
+                    <p>Standard difficulty paper focusing on core SLO concepts.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/FBISE_Math_HSSC1_2026.pdf')">View</button>
+                        <a href="papers/FBISE_Math_HSSC1_2026.pdf" download class="btn btn-outline">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 60px;" class="animate-up">
+            <h2>Model & Past Papers</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="card-tag">Model Paper</span>
+                    <h3>Math HSSC-I (3rd Set)</h3>
+                    <p>Official 3rd set of model papers released by Federal Board.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/Mathematics HSSC-I_(3rd Set).pdf')">View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="card-tag">Model Paper</span>
+                    <h3>Math HSSC-I (2nd Set)</h3>
+                    <p>Official 2nd set of model papers with detailed solutions.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="viewPDF('papers/Mathematics HSSC-I (2nd Set).pdf')">View</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <span class="card-tag">HSSC-II Archive</span>
+                    <h3>12th Class Archive</h3>
+                    <p>Access the full archive of Class 12 Mathematics past papers.</p>
+                    <a href="https://pastpapersfbise.com/federal-board-12th-class-slo-past-papers/" target="_blank" class="btn btn-outline">Go to Archive</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="viewer-overlay" id="viewer">
+        <div class="viewer-header">
+            <h3 id="viewer-title">PDF Viewer</h3>
+            <button class="btn btn-primary" style="max-width: 100px;" onclick="closeViewer()">Close</button>
+        </div>
+        <div class="viewer-content">
+            <iframe id="pdf-frame"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Khxzi Devs | Mathematics Department</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
